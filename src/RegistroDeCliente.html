@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="./css/RegistroDeCliente.css">
+	<link rel="stylesheet" href="./css/home.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+	<title>Registro de Cliente</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+	<!-- Menu superior -->
+
+	<!-- ========================================== cabeçalho===================================== -->
+	<header class="container d-inline my-0 py-0">
+		<!-- ========================================== area do logo a esquerda no cabecalho ===================================== -->
+
+		<div class="d-flex flex-row row">
+			<div class="logo col-lg-3 ml-5">
+				<a class="h4" href="../src/home.html">Big Wave Surfb{ }ard</a>
+			</div>
+			<div class=""></div>
+			<div class="enter d-flex flex-row-reverse col-lg-8">
+				<ul>
+					<li><a href="../src/RegistroDeCliente.html">Registres-se</a></li>
+					<li>|</li>
+					<!-- <li><a class="btn btn-primary" href="#Login">Entre</a></li> -->
+					<li><button type="button" class=" button4" data-toggle="modal" data-target="#Login">
+							Entre
+						</button></li>
+
+					<!-- ============== inicio janela do login ======== -->
+
+					<div class="modal fade" id="Login" tabindex="-1" role="dialog" aria-labelledby="LoginLabel"
+						aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div>
+									<button type="button" class="close pr-2" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+									<h5 class="mt-3 ml-3">AINDA NÃO É CADASTRADO?</h5>
+
+									<p Class="h5 mx-4">Registre-se para encontrar pecas únicas, incentivar o mercado
+										independente e também divulgar seu trabalho</p>
+									<p></p>
+									<button type="button" class="button5" data-dismiss="modal">REGISTRE-SE</button>
+									<P></P>
+									<p></p>
+									<hr>
+									<p></p>
+
+
+									<p Class="h5 ml-3">ENTRE</p>
+
+
+									<form>
+										<div class="form-group p-3">
+											<label for="email">E-mail</label>
+											<input type="email" class="form-control" id="email"
+												aria-describedby="emailHelp" placeholder="e-mail">
+
+										</div>
+										<div class="form-group p-3">
+											<label for="senha">Senha</label>
+											<input type="password" class="form-control mx-2" id="senha"
+												placeholder="Senha">
+										</div>
+										<div class="d-flex">
+											<button type="submit"
+												class="button3 mx-4 px-5 bg-success text-white">ENTRE</button>
+											<button type="button" class="button3 mx-4 px-3 bg-primary text-white">ENTRE
+												COM FACEBOOK</button>
+										</div>
+										<a href="">Esqueceu sua senha?</a>
+									</form>
+
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<!-- ==========================fim da janela do login ====================== -->
+
+					<!-- ========================================== inicio janela de pesquisa ===================================== -->
+
+
+					<li><button type="button" class="btn btn-outline-light " data-toggle="modal"
+							data-target="#procura"><img class="icons" src="../assets/img/icons/magnifying-glass.png"
+								alt="procurar"></button>
+
+						<div class="modal fade" id="procura" tabindex="-1" role="dialog" aria-labelledby="procuraLabel"
+							aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div>
+										<button type="button m-5" class="close pr-2" data-dismiss="modal"
+											aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+
+										<form>
+											<div class="form-group pt-4 px-3">
+												<div class="d-flex">
+													<input type="text" class="form-control" id="pesquisa"
+														aria-describedby="pesquisaHelp" placeholder="pesquisa">
+													<button type="submit" class="btn btn-outline-light px-2 pt-0"
+														data-toggle="modal" data-target="#procura"><img class="icons"
+															src="../assets/img/icons/magnifying-glass.png"
+															alt="procurar"></button>
+												</div>
+											</div>
+
+										</form>
+
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+						<!-- =========================  fim janela de pesquisa ================== -->
+
+
+					<li><a class="icons" href=""><img class="icons" src="../assets/img/icons/shopping-bag.png"
+								width="23px" alt="bolsa"></a></li>
+					<li><a class="icons" href=""><img class="icons" src="../assets/img/icons/heart.png" alt="coracao"></a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+
+		<!-- ========================================== fim da area do logo a esquerda no cabecalho ===================================== -->
+
+
+		<!-- ========================================== area da navegação no cabecalho ===================================== -->
+
+		<nav class="tipo_arts navbar navbar-expand-lg ml-8 nav-justifiedr bg-color">
+			<!-- <ul class="navbar-nav py-0 my-0">
+		<li class="nav-iten"> -->
+			<div class="btn-group">
+				<button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+					aria-expanded="false">
+					TIPOS
+				</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">TODOS</a>
+					<a class="dropdown-item" href="#">LONGBOARD</a>
+					<a class="dropdown-item" href="#">STAND-UP PADDLE</a>
+					<a class="dropdown-item" href="#">GUN</a>
+					<a class="dropdown-item" href="#">MALIBU</a>
+					<a class="dropdown-item" href="#">SHORTBOARD</a>
+				</div>
+			</div>
+			<div class="btn-group">
+				<button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+					aria-expanded="false">
+					MATERIAL
+				</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">TODOS</a>
+					<a class="dropdown-item" href="#">EPOXY RESIN</a>
+					<a class="dropdown-item" href="#">POLIESTER</a>
+					<a class="dropdown-item" href="#">FIBERGLASS</a>
+					<a class="dropdown-item" href="#">CARBONO</a>
+					<a class="dropdown-item" href="#">EXPANDED POLYSTYRENE</a>
+				</div>
+			</div>
+
+			<div class="btn-group">
+				<button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+					aria-expanded="false">
+					IMPORTADOS
+				</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">TODOS</a>
+					<a class="dropdown-item" href="#">AUSTRALIA</a>
+					<a class="dropdown-item" href="#">USA</a>
+					<a class="dropdown-item" href="#">HAWAI</a>
+					<a class="dropdown-item" href="#">PORTUGAL</a>
+					<a class="dropdown-item" href="#">NOVA ZELANDIA</a>
+				</div>
+			</div>
+
+			<div class="btn-group">
+				<button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+					aria-expanded="false">
+					PRINTS
+				</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">TODOS</a>
+					<a class="dropdown-item" href="#">COLAGEM</a>
+					<a class="dropdown-item" href="#">PINTURA</a>
+					<a class="dropdown-item" href="#">ABSTRATA</a>
+					<a class="dropdown-item" href="#">GRAFITTI</a>
+					<a class="dropdown-item" href="#">ILUSTRACAO DIGITAL</a>
+				</div>
+			</div>
+
+
+			<div class="btn-group">
+				<button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+					aria-expanded="false">
+					ESTILOS
+				</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">TODOS</a>
+					<a class="dropdown-item" href="#">INICIANTE</a>
+					<a class="dropdown-item" href="#">PRATICANTE</a>
+					<a class="dropdown-item" href="#">EXPERIENTE</a>
+					<a class="dropdown-item" href="#">MEDIO</a>
+					<a class="dropdown-item" href="#">FIGURATIVA</a>
+				</div>
+			</div>
+
+			<div class="btn-group">
+				<button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+					aria-expanded="false">
+					OUTROS
+				</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">TODOS</a>
+				</div>
+			</div>
+
+		</nav>
+
+
+	</header>
+
+	<div class="container-fluid h-75 p-5">
+		<div class="navbar navbar-light bg-light py-1">
+			<h4>
+				CADASTRE-SE
+			</h4>
+		</div>
+		<form class="form-group" action="home.html" method="POST">
+			<div>
+				<input type="text" class="form-control" id="exampleInputNome" aria-describedby="nomeHelp"
+					placeholder="Nome*">
+				<small id="nomelHelp" class="form-text text-muted"></small>
+			</div>
+			<div>
+				<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+					placeholder="Email*">
+				<small id="emailHelp" class="form-text text-muted"></small>
+			</div>
+			<div>
+				<input type="senha" class="form-control" id="exampleInputSenha1" aria-describedby="senhaHelp"
+					placeholder="Senha*">
+				<small id="senhalHelp" class="form-text text-muted"></small>
+			</div>
+			<div>
+				<input type="senha" class="form-control" id="exampleInputSenha2" aria-describedby="senhaHelp"
+					placeholder="Confirmar Senha*">
+				<small id="senhaHelp" class="form-text text-muted"></small>
+			</div>
+
+			<button type="submit" class="btn btn-success">Registre-se</button>
+		</form>
+	</div>
+	<!-- ========================================== inicio do footer ===================================== -->
+	<div class="col-lg-12 mt-5">
+		<nav class="col-lg-6 navegacao_footer">
+			<ul>
+				<li><a href="">ENTER</a></li>
+				<li><a href="VendaDeProduto2.html">PARA SURFISTAS</a></li>
+				<li><a href="sobre.html">SOBRE</a></li>
+			</ul>
+		</nav>
+		<div>
+			<nav class="navegacao_footer">
+				<ul class="col-lg-12">
+					<li><a href="termos_de_servico.html">TERMOS DE SERVIÇO</a></li>
+					<li><a href="RegistroDeCliente.html">CADASTRE-SE</a></li>
+					<li><a href="politica_de_privacidade.html">POLITICAS DE PRIVACIDADE</a></li>
+					<li><a href="VendaDeProduto.html">PARA COMPRADORES</a></li>
+					<li><a href="">NEWSLETTER</a></li>
+					<li><a href="">FALE CONOSCO</a></li>
+				</ul>
+			</nav>
+
+			<!-- ========================================== fim do menu navegaçao do footer ===================================== -->
+
+			<!-- ========================================== inicio do footer ===================================== -->
+			<footer class="row">
+				<div>
+					<h2>Big Waves Surfb{ }ard</h2>
+				</div>
+				<div>
+					<h3>@2020 LOGO|DIGITAL HOUSE|ALL RIGHTS RESERVD</h3>
+				</div>
+				<div>
+					<a class="icon mr-3" href=""><img src="../assets/img/icons/facebook.png" width="29px" alt="facebook"></a>
+					<a class="icon mr-3" href=""><img src="../assets/img/icons/instagram.png" width="29px" alt="instagram"></a>
+					<a class="icon mr-3" href=""><img src="../assets/img/icons/pinterest.png" width="29px" alt="pintrest"></a>
+					<a class="icon mr-3" href=""><img src="../assets/img/icons/twitter-black-shape.png" width="29px"
+						alt="twitter"></a>
+				</div>
+			</footer>
+
+</body>
+
+</html>
